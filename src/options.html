@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classroom Tweaks Configuration</title>
+  <style>
+    body: { padding: 10px; }
+		input {
+			width: 100%;
+		}
+		.clearfix {
+			clear: both;
+		}
+		.label { 
+		}
+		button {
+			float:left;
+		}
+		#status {
+			padding-top: 5px;
+			width: 70%;
+			float: right;
+			text-align: center;
+			font-size: 15px;
+		}
+  </style>
+</head>
+
+<body>
+  <div class="row"><span class="label">By changing your default account number, Classroom will automatically redirect to the correct account when logging in. If you have multiple Google logins, this number corrolates to the ordered account number (0 is your first account ... 1 is your second account ... etc)</span><input id="uid" type="number" placeholder="classroom.google.com/u/???/h/"></div>
+	<div class="clearfix"></div>
+  <button id="save">Save</button>
+  <div id="status"></div>
+	<div class="clearfix"></div>
+	
+  <script src="options.js"></script>
+</body>
+</html>

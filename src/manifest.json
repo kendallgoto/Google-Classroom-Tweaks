@@ -1,0 +1,31 @@
+{
+  "name": "Classroom Tweaks",
+  "version": "1.0",
+  "description": "Improves Google Classroom for more convenient use.",
+	"content_scripts": [
+		{
+			"matches": ["https://classroom.google.com/*"],
+			"css": ["css/cs.css"],
+			"js": ["js/jquery-3.2.1.min.js", "js/cs.js"],
+			"run_at": "document_end"
+		}
+	],
+  "permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"storage",
+    "https://classroom.google.com/*",
+		"tabs"
+  ],
+	"background": {
+	      "scripts": ["js/background.js"]
+	},
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	},
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "manifest_version": 2
+}
